@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styles</title>
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
   </head>
 <body>
   <header><h1>Poker Cards</h1></header>
     <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+        <section id='diamond'><span>A</span><span>♦</span><span>A</span></section>
+        <section id='club'><span>A</span><span>♣</span><span>A</span></section>
+        <section id='heart'><span>A</span><span>♥</span><span>A</span></section>
+        <section id='spade'><span>A</span><span>♠</span><span>A</span></section>
     </main>
+    <input id='idInput' type="text" placeholder="id"/><br/>
+    <input id='colorInput' type="text" placeholder="color"/><br/>
+    <button id='btn' onclick="setCard()">Click me</button>
+    <button id='reset' onclick="reset()">Reset</button>
 </body>
 </html>
